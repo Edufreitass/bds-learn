@@ -21,3 +21,7 @@ INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('2.0
 INSERT INTO tb_resource (title, description, position, img_uri, type, external_link, offer_id) VALUES ('Trilha HTML', 'Trilha principal do curso', 1, 'http://www.learnod.com/img/courses/technical-analysis-online-course.jpg', 1, 'https://github.com', 1);
 INSERT INTO tb_resource (title, description, position, img_uri, type, external_link, offer_id) VALUES ('Forum', 'Tire suas dúvidas', 2, 'http://www.learnod.com/img/courses/technical-analysis-online-course.jpg', 2, 'https://github.com', 1);
 INSERT INTO tb_resource (title, description, position, img_uri, type, external_link, offer_id) VALUES ('Lives', 'Lives exclusivas para a turma', 3, 'http://www.learnod.com/img/courses/technical-analysis-online-course.jpg', 0, 'https://github.com', 1);
+
+INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Capítulo 1', 'Neste capítulo vamos começar', 1, 'http://www.learnod.com/img/courses/technical-analysis-online-course.jpg', 1, null);
+INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Capítulo 2', 'Neste capítulo vamos continuar', 2, 'http://www.learnod.com/img/courses/technical-analysis-online-course.jpg', 1, 1);
+INSERT INTO tb_section (title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Capítulo 3', 'Neste capítulo vamos finalizar', 3, 'http://www.learnod.com/img/courses/technical-analysis-online-course.jpg', 1, 2);
